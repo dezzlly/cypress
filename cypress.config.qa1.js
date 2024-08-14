@@ -20,7 +20,8 @@ export default defineConfig({
         USER: 'user1',
         PASSWORD: 'password1',
         USER_DATA_FILE: 'cypress/fixtures/userData1.json',
-        CAR_DATA_FILE: 'cypress/fixtures/car.json'
+        CAR_DATA_FILE: 'cypress/fixtures/car.json',
+        API_BASE_URL: 'https://qauto.forstudy.space/api'
     },
     viewportWidth: 1280,
     viewportHeight: 720,
