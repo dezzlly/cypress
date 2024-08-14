@@ -1,0 +1,5 @@
+{
+    "cars": "/cars",
+    "login": "/auth/signin",
+    "expense": "/expenses"
+}

@@ -1,0 +1,46 @@
+{
+    "sections": {
+      "header": ".header",
+      "footer": "#contactsSection"
+    },
+    "elements": {
+      "buttons": "button",
+      "links": "a"
+    },
+    "signUp": ".hero-descriptor_btn",
+    "registration modal title": "//h4[text()='Registration']",     
+    "name label": "//label[text()='Name']",
+    "last name label": "//label[text()='Last name']",
+    "email label": "//label[text()='Email']",
+    "password label": "//label[text()='Password']",
+    "re-enter password label": "//label[text()='Re-enter password']",
+    "registrationButton": "//button[text()='Register']",
+    "name": "#signupName",      
+    "lastName": "#signupLastName",    
+    "email": "#signupEmail",    
+    "password": "#signupPassword",    
+    "repeatPassword": "#signupRepeatPassword",
+    "allert for field": "div.invalid-feedback p",
+    "signIn": "//button[text()='Sign In']",
+    "signinEmail": "#signinEmail",
+    "signinPassword": "#signinPassword",
+    "login": "//button[text()='Login']",
+    "addCarButton": "//button[text()='Add car']",
+    "brand": "#addCarBrand",
+    "model": "#addCarModel",
+    "milesField": "#addCarMileage",
+    "addButton": "//button[text()='Add']",
+    "miles": "input[type='number'][name='miles']",
+    "carName": "p.car_name.h2",
+    "addFuelExpenseButton": "//button[text()='Add fuel expense']",
+    "expenseMileage": "#addExpenseMileage",
+    "expenseLiters": "#addExpenseLiters",
+    "expenseTotalCost": "#addExpenseTotalCost",
+    "expenseDate": "#addExpenseDate",
+    "calendar": "button.btn.date-picker-toggle",
+    "day": ".ngb-dp-today > .btn-light",
+    "fuelProperty": "//td",
+    "fuelExpenses": "[routerlink='expenses']"
+  }
+
+  

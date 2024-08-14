@@ -1,0 +1,39 @@
+{
+  "type": "module",
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean-reports": "node clean-reports.js",
+    "cucumber-report": "node generate-html-report.js",
+    "merge-reports": "npx mochawesome-merge cucumber-reports/*.json > cucumber-reports/merged-report.json",
+    "report": "npm run merge-reports && npx marge cucumber-reports/merged-report.json",
+    "e2e:stage": "npx cypress open --config-file cypress.config.qa1.js",
+    "e2e:prod": "npx cypress open --config-file cypress.config.qa2.js",
+    "e2e:stageReport": "npm run clean-reports && npx cypress run --config-file cypress.config.qa1.js && npm run report",
+    "e2e:prodReport": "npm run clean-reports && npx cypress run --config-file cypress.config.qa2.js && npm run report"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/plugin-transform-class-properties": "^7.24.7",
+    "@babel/plugin-transform-object-rest-spread": "^7.24.7",
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.2",
+    "@cucumber/cucumber": "^10.8.0",
+    "@cucumber/cucumber-expressions": "^17.1.0",
+    "@cucumber/gherkin": "^28.0.0",
+    "core-js": "^3.37.1",
+    "cucumber-html-reporter": "^7.1.1",
+    "cypress": "^13.13.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.1",
+    "glob": "^11.0.0",
+    "lru-cache": "^11.0.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
